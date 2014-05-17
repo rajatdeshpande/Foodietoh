@@ -1,0 +1,148 @@
+
+<com.foodietoh.foodiedoh.SlidingUpPanelLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/sliding_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="bottom">
+<!--sothree:panelHeight="68dp"
+sothree:shadowHeight="4dp"-->
+
+<android.support.v4.view.ViewPager
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.foodietoh.foodiedoh.FoodieToh" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/checkBoxDay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Monday"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPrice1"
+        android:layout_toRightOf="@+id/checkBoxDay1"
+        android:layout_marginLeft="60dp"
+        android:layout_alignBottom="@+id/checkBoxDay1"
+        android:textSize="30dp"
+        android:text="INR 200"/>
+
+
+
+    <CheckBox
+        android:id="@+id/checkBoxDay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxDay1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Tuesday"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPrice2"
+        android:layout_alignRight="@+id/textViewPrice1"
+        android:layout_alignBottom="@+id/checkBoxDay2"
+        android:textSize="30dp"
+        android:text="INR 200"/>
+
+
+    <CheckBox
+        android:id="@+id/checkBoxDay3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxDay2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Wednesday"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPrice3"
+        android:layout_alignRight="@+id/textViewPrice1"
+        android:layout_alignBottom="@+id/checkBoxDay3"
+        android:textSize="30dp"
+        android:text="INR 200"/>
+
+
+    <CheckBox
+        android:id="@+id/checkBoxDay4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxDay3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Thursday"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPrice4"
+        android:layout_alignRight="@+id/textViewPrice1"
+        android:layout_alignBottom="@+id/checkBoxDay4"
+        android:textSize="30dp"
+        android:text="INR 200"/>
+
+
+    <CheckBox
+        android:id="@+id/checkBoxDay5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxDay4"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Friday"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPrice5"
+        android:layout_alignRight="@+id/textViewPrice1"
+        android:layout_alignBottom="@+id/checkBoxDay5"
+        android:textSize="30dp"
+        android:text="INR 200"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxDay6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxDay5"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Friday"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPrice6"
+        android:layout_alignRight="@+id/textViewPrice1"
+        android:layout_alignBottom="@+id/checkBoxDay6"
+        android:textSize="30dp"
+        android:text="INR 200"/>
+
+<RelativeLayout
+    android:layout_below="@+id/checkBoxDay6"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#bebebe"></RelativeLayout>
+
+</RelativeLayout>
+
+</com.foodietoh.foodiedoh.SlidingUpPanelLayout>
