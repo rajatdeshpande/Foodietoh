@@ -40,6 +40,9 @@ public class FoodieToh extends FragmentActivity {
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
 
+        CustomDialogClass cdd=new CustomDialogClass(this);
+        cdd.show();
+
     }
 
     @Override
