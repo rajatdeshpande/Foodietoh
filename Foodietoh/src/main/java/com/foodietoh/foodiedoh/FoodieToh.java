@@ -1,5 +1,6 @@
 package com.foodietoh.foodiedoh;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -40,8 +41,11 @@ public class FoodieToh extends FragmentActivity {
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
 
-        CustomDialogClass cdd=new CustomDialogClass(this);
-        cdd.show();
+//        CustomDialogClass cdd=new CustomDialogClass(this);
+//        cdd.show();
+
+        Intent intent = new Intent(this, CheckoutActivity.class);
+        startActivity(intent);
 
     }
 

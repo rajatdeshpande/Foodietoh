@@ -5,13 +5,21 @@ package com.foodietoh.foodiedoh;
  */
 public class ListElement {
 
-    public String dayOfWeek;
+    public String dayOfWeekLetter;
+    public String nameOfItem;
+    public String deliverySlot;
+    public int imageResource;
     public int price;
-    public boolean isChecked;
+    public int quantity;
+    public boolean isOrdered;
 
-    public ListElement(String dayOfWeek, int price, boolean isChecked) {
-        this.dayOfWeek = dayOfWeek;
+    public ListElement(String dayOfWeekLetter,String nameOfItem,String deliverySlot, int price, int quantity, int imageResource, boolean isOrdered) {
+        this.dayOfWeekLetter = dayOfWeekLetter;
         this.price = price;
-        this.isChecked = isChecked;
+        this.isOrdered = isOrdered;
+        this.nameOfItem = nameOfItem;
+        this.deliverySlot = deliverySlot;
+        this.imageResource = imageResource;
+        this.quantity = quantity;
     }
 }
